@@ -1,5 +1,5 @@
 # Pizza menu
 
-<h3> react front-end </h3>
+**react front-end**
 
 <img src="banner.png" />
