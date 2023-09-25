@@ -70,7 +70,6 @@ function Header() {
 
 function Menu() {
     const pizzas = pizzaData;
-    // const pizzas = [];
     const numPizzas = pizzas.length;
 
     return (
@@ -109,7 +108,9 @@ function Pizza({ pizzaObj }) {
             <div>
                 <h3>{pizzaObj.name}</h3>
                 <p>{pizzaObj.ingredients}</p>
-                <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price}</span>
+                <span style={{ color: "#51504e" }}>
+                    {pizzaObj.soldOut ? "SOLD OUT" : "$" + pizzaObj.price}
+                </span>
             </div>
         </li>
     );
